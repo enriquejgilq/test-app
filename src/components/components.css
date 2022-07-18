@@ -1,0 +1,13 @@
+.header {
+    background-color: darkgrey;
+    display: flex;
+    cursor: pointer;
+    padding: 1%;
+    gap: 15px;
+}
+.ListCharacters{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}

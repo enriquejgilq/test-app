@@ -1,0 +1,10 @@
+.content{
+    width:  1080px;
+    height:  50vh;
+    display: grid;
+    place-content: center;
+ }
+.child{
+    display: grid;
+    place-content: center;
+}

@@ -1,0 +1,12 @@
+.ListFavorites{
+    width:  200vh;
+    height:  50vh;
+    display: grid;
+    place-content: center;
+}
+
+.child{
+    display: grid;
+    place-content: center;
+    gap: 5px;
+}
