@@ -19,7 +19,7 @@ function index() {
   return (
     <div> 
        {/**componente React */}
-       <p> ver console.log() para ver el otro ejercicio</p>
+       <p> ver console.log() para ver el ejercicio 1</p>
       <ListNicknames arrayList={arrayList} order='ASC'/>
     </div>
   )
