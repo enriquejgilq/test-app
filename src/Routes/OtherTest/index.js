@@ -3,7 +3,6 @@ import {arrayList} from './array'
 import ListNicknames from './ListNicknames';
 
 function index() {
- 
   let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
   //funcion que recibe un array como parametro para sumarlo
   const test =(array)=>{

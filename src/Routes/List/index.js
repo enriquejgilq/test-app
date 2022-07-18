@@ -33,7 +33,6 @@ function List() {
         if (error) {
                 return <p> Error al realizar la consulta...</p>;
         }
-
         return (
                 <div className='content'>
                         <div className='child' >
