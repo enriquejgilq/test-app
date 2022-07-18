@@ -25,7 +25,7 @@ root.render(
 					<App />
 				</React.StrictMode>
 			</PersistGate>
-		</ApolloProvider>,
+		</ApolloProvider>
 	</Provider>,
 	document.getElementById('root')
 

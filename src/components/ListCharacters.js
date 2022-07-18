@@ -46,7 +46,7 @@ function ListCharacters({ list }) {
           <img src={item.image} />
           <button type='button' onClick={() => goToDetails(item.id)} > Ver detalles</button>
           <button type='button' onClick={() => addToFavorites(item)}> Agregar a favoritos</button>
-          <button type='button' onClick={() => removeToFavorites(item)}>  Quitar a favoritos</button>
+          {favorites.map((fav)=> (<> {fav.id=== item.id && <button type='button' onClick={() => removeToFavorites(item)}>  Quitar a favoritos</button>}</>))}
         </div>
       ))
       }
