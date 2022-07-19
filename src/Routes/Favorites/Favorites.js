@@ -13,15 +13,15 @@ function Favorites() {
     if (favorites.length === 0) {
         return <>
             <p> Su lista de favoritos esta vacia!</p>
-            <button onClick={goToCharacters}> Lista de personajes</button>
+            <a class="my-button" onClick={goToCharacters}> Lista de personajes</a>
               </>
     }
     return (
         <div className='ListFavorites' >
             {favorites.map((item) => (
                 <div className='child'  >
-                    <li>{item.name}</li>
-                    <img src={item.image} />
+                    <h2>{item.name}</h2>
+                    <img className='img' src={item.image} />
                 </div>
             ))}
         </div>

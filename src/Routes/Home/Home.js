@@ -19,9 +19,9 @@ function Home() {
 	return (
 		<div className='home'>
 			<div className='child' >
-				<button onClick={goToCharacters}> Lista de personajes</button>
-				<button onClick={goOtherTest}> Ejercicios</button>
-				<button onClick={goToFavorites}> Ver favoritos</button>
+				<a class="my-button" onClick={goToCharacters}> Lista de personajes</a>
+				<a class="my-button" onClick={goOtherTest}> Ejercicios</a>
+				<a class="my-button" onClick={goToFavorites}> Ver favoritos</a>
 			</div>
 		</div>
 	)

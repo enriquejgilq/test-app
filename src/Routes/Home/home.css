@@ -9,3 +9,33 @@
     place-content: center;
     gap: 5px;
 }
+
+.btn{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+}
+a.my-button {
+    background: linear-gradient(to right, #082720, #235133);
+    background-color: #082720;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 15px 3px;
+    border: 0px solid #000;
+    border-radius: 15px;
+    display: inline-block;
+}
+a.my-button:hover {
+    background: linear-gradient(to right, #515956, #576f5e);
+    background-color: #515956;
+}
+a.my-button:active {
+    transform: scale(0.95);
+}

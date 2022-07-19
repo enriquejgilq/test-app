@@ -5,9 +5,91 @@
     padding: 1%;
     gap: 15px;
 }
-.ListCharacters{
+.ListCharacters {
+    width: 600px;
+    gap: 50px;
+    border-radius: 78px;
+    display: flex;
+    margin-top: 15px;
+    background: #f8f8f8;
+    border: solid #bdbdbd 1px;
+    border-top-left-radius: 40px;
+    -webkit-border-top-left-radius: 40px;
+    -moz-border-top-left-radius: 40px;
+    border-top-right-radius: 39px;
+    -webkit-border-top-right-radius: 39px;
+    -moz-border-top-right-radius: 39px;
+    border-bottom-left-radius: 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    -moz-border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    -webkit-border-bottom-right-radius: 40px;
+    -moz-border-bottom-right-radius: 40px;
+    justify-items: center;
+    align-items: center;
+}
+.img {
+    border-radius: 150px;
+}
+.profile{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+    margin: auto;
+}
+.btn{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    margin: auto;
+}
+a.my-button {
+    background: linear-gradient(to right, #082720, #235133);
+    background-color: #082720;
+    color: #fff;
+    font-family: Verdana;
+    font-size: 15px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 15px 3px;
+    border: 0px solid #000;
+    border-radius: 15px;
+    display: inline-block;
+}
+a.my-button:hover {
+    background: linear-gradient(to right, #515956, #576f5e);
+    background-color: #515956;
+}
+a.my-button:active {
+    transform: scale(0.95);
+}
+
+.menu-bar {
+    background-color: #082720;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.item {
+    color: white;
+    background-color: transparent;
+    font-size: 18px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 14px 20px;
+}
+
+.item.title {
+    font-weight: 600;
+}
+
+.item:hover {
+    background-color: rgba(17, 2, 2, 0.1);
+    cursor: pointer;
 }

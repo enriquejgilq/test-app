@@ -46,7 +46,7 @@ function Details() {
 					<b>Nombre: </b>
 					{list.name}
 				</p>
-				<img src={list.image} />
+				<img className="img" src={list.image} />
 				<p>
 					<b>Status: </b>
 					{list.status}

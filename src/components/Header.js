@@ -15,11 +15,15 @@ function Header() {
     navigate(`/details`)
   }
   return (
-    <div className='header'>
-      <p onClick={goHome}><b>Inicio</b></p>
-      <p onClick={goCharacters}><b>Ver lista de personajes </b></p>
-      <p onClick={goFavorites}><b>Ver favoritos </b></p>
-    </div>
+    <nav class="menu-bar">
+      <div class="group">
+        <a class="item title" onClick={goHome} >Inicio</a>
+      </div>
+      <div class="group">
+        <a class="item" onClick={goCharacters} >Ver lista de personajes</a>
+        <a class="item" onClick={goFavorites} >Ver favoritos</a>
+      </div>
+    </nav>
   )
 }
 

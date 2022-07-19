@@ -8,11 +8,11 @@ function ListCharacters({ list }) {
   const navigate = useNavigate();
   const dispatch = useDispatch()
   const favorites = useSelector(favoritesCharacters)
-//funcion de redireccion a los detalles, se pasa el "id" como parametro en el url para consultar la api y mostrar sus detalles 
+  //funcion de redireccion a los detalles, se pasa el "id" como parametro en el url para consultar la api y mostrar sus detalles 
   const goToDetails = (e) => {
     navigate(`/details/character/${e}`)
   }
-//funcion agregar a favoritos
+  //funcion agregar a favoritos
   const addToFavorites = (e) => {
     {
       var id = e,
@@ -42,11 +42,15 @@ function ListCharacters({ list }) {
     <div>
       {list.characters.results.map((item) => (
         <div className='ListCharacters'  >
-          <li>{item.name}</li>
-          <img src={item.image} />
-          <button type='button' onClick={() => goToDetails(item.id)} > Ver detalles</button>
-          <button type='button' onClick={() => addToFavorites(item)}> Agregar a favoritos</button>
-          {favorites.map((fav)=> (<> {fav.id=== item.id && <button type='button' onClick={() => removeToFavorites(item)}>  Quitar a favoritos</button>}</>))}
+          <div className='profile'>
+            <img className='img' src={item.image} />
+            <h2>{item.name}</h2>
+          </div>
+          <div className='btn'>
+            <a class="my-button" onClick={() => goToDetails(item.id)} >Ver detalles</a>
+            <a class="my-button" onClick={() => addToFavorites(item)}> Agregar a favoritos</a>
+            {favorites.map((fav) => (<> {fav.id === item.id && <a class="my-button" onClick={() => removeToFavorites(item)}>  Quitar a favoritos</a>}</>))}
+          </div>
         </div>
       ))
       }
