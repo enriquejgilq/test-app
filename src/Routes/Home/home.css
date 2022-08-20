@@ -9,6 +9,10 @@
     place-content: center;
     gap: 5px;
 }
+.stylebtn{
+    background: linear-gradient(to right, #082720, #235133);
+ 
+}
 
 .btn{
     width: 250px;

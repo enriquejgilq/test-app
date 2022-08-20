@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import './home.css'
@@ -19,9 +20,9 @@ function Home() {
 	return (
 		<div className='home'>
 			<div className='child' >
-				<a class="my-button" onClick={goToCharacters}> Lista de personajes</a>
-				<a class="my-button" onClick={goOtherTest}> Ejercicios</a>
-				<a class="my-button" onClick={goToFavorites}> Ver favoritos</a>
+				<Button variant='contained' className='stylebtn'   onClick={goToCharacters}> Lista de personajes   </Button>
+				<Button variant='contained' className='stylebtn'  onClick={goOtherTest}> Ejercicios  </Button>
+				<Button variant='contained' className='stylebtn'   onClick={goToFavorites}> Lista de personajes   </Button>
 			</div>
 		</div>
 	)

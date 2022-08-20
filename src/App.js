@@ -1,13 +1,23 @@
+import * as React from 'react';
 import { BrowserRouter as Router, } from "react-router-dom"
 import Routes from './Routes';
-import Header from './components/Header';
+import PersistentDrawerRight from './components/PersistentDrawerRight';
 import './App.css';
 
 function App() {
+    const [open, setOpen] = React.useState(false);
+  
+    const handleDrawerOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleDrawerClose = () => {
+      setOpen(false);
+    };
     return (
         <div className="App">
             <Router>
-                <Header />
+                <PersistentDrawerRight handleDrawerOpen={handleDrawerOpen}  handleDrawerClose={handleDrawerClose} open={open}  />
                 <div>
                     <Routes />
                 </div>

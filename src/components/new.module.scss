@@ -1,0 +1,20 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.btn {
+    background: linear-gradient(to right, #082720, #235133);
+    color:white
+}
+
+.btnGroup{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
