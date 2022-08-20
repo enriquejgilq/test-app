@@ -19,7 +19,7 @@ function Home() {
 
 	return (
 		<div className='home'>
-			<div className='child' >
+ 			<div className='child' >
 				<Button variant='contained' className='stylebtn'   onClick={goToCharacters}> Lista de personajes   </Button>
 				<Button variant='contained' className='stylebtn'  onClick={goOtherTest}> Ejercicios  </Button>
 				<Button variant='contained' className='stylebtn'   onClick={goToFavorites}> Lista de personajes   </Button>

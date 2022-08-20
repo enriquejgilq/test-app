@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllCharacters } from "../../Redux/actions/app";
 import ListCharacters from "../../components/ListCharacters";
 import { gql, useQuery } from "@apollo/client";
+import Loader from "../../components/Loader";
 //consulta a todos los personajes de rickandmorthy
 const ALL_CHARACTERS = gql`
   query {
@@ -27,7 +28,11 @@ function List() {
         }, [data]);
         //si loadiang es verdadero me cambia a un mensaje "cargando"
         if (loading) {
-                return <p> Cargando...</p>;
+                return <div className="content">
+                        <div className="child">
+                                <Loader />
+                        </div>
+                </div>;
         }
         //en caso de error, me muestra un mensaje de error
         if (error) {
@@ -37,7 +42,7 @@ function List() {
                 <div className='content'>
                         <div className='child' >
                                 {/** componente que me muestra la lista de personajes, se le pasa como prop la lista de personajes almacenados en el store */}
-                         <ListCharacters list={data} />
+                                <ListCharacters list={data} />
                         </div>
                 </div>
         );
