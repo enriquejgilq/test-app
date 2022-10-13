@@ -12,6 +12,7 @@ function Details() {
 	const list = useSelector(listCharacterSelector);
 	//query para consumir los datos de la api
 	const DETAIL_CHARACTER = gql`
+	
   query {
     character(id: ${id}) {
       id

@@ -1,8 +1,7 @@
 .content{
-    width:  1080px;
-    height:  50vh;
-    display: grid;
-    place-content: center;
+     
+    display: grid !important;
+    place-content: center !important;
  }
 .child{
     display: grid;
